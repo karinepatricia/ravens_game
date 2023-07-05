@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(125deg, rgb(240, 201, 201), rgb(172, 199, 233), rgb(132, 132, 244));
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif; /* Set font to 'impact' */
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#collisionCanvas{
+    opacity: 0;
+}
+
+#instructions{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(172, 133, 213, 0.603);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+
+#text {
+    color: white;
+    font-size: 20px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#startButton {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #6555db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: blink 1.4s infinite;
+}
+
+#restart-button{
+    position: relative;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #6555db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
